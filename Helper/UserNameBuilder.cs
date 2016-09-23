@@ -9,7 +9,7 @@ namespace Helper
         {            
             Random rand = new Random();
             int randomValue = rand.Next(999999);
-            var userName = string.Format("{0}{1}{2}{3}",user.FirstName,user.LastName,user.Email.Split('@')[0]??"",randomValue);
+            var userName = string.Format("{0}{1}{2}{3}",user.FirstName,user.LastName, user.Email.Split('@')[0]??"", randomValue);
             user.UserName = userName;
         }
     }
